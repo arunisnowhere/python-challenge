@@ -42,7 +42,7 @@ def caesar_cipher2_2(inputcode, keyshift):
     table = str.maketrans(string.ascii_lowercase, string.ascii_lowercase[keyshift:]+string.ascii_lowercase[:keyshift])
     return (str.translate(inputcode, table))
 
-
+# given cipher
 inputcode =  "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj"
 # The number of letters by which the alphabet is shifted.
 keyshift = 2 # A = C means keyshift = 2
@@ -51,6 +51,7 @@ print (caesar_cipher1(inputcode, keyshift))
 print (caesar_cipher2_1(inputcode, keyshift))
 print (caesar_cipher2_2(inputcode, keyshift))
 
+# applying on url
 inputcode = "map"
 keyshift = 2
 print (caesar_cipher1(inputcode, keyshift))
